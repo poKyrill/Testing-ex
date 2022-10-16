@@ -17,7 +17,7 @@
     <header>
       <div class="header-contacts">
         <div class="container">
-          <div class="nav-top">
+          <div class="nav-top header-body">
             <div class="contact">
               <img
                 src="./images/phone.svg"
@@ -42,30 +42,39 @@
           </div>
         </div>
       </div>
-      <div class="header-nav">
+
+      <div class="wrapper">
         <div class="container">
-          <div class="nav-bottom">
-            <div class="logo">
-              <a href="#"
-                ><img src="./images/logo-header.svg" alt="Портен"
-              /></a>
-            </div>
-            <div class="nav">
-                <ul class="nav-list">
-                  <li><a href="#">сподобалось</a></li>
-                  <li><a href="#">Особистий кабінет</a></li>
-                  <li><a href="#">налаштування</a></li>
+          <div class="header">
+            <div class="header-body">
+              <div class="header-logo">
+                <a href="#"><img src="./images/logo-header.svg" alt="" class="logo"></a>
+              </div>
+              <div class="header-burger">
+                <span></span>
+              </div>
+              <nav class="header-menu">
+                <ul class="header-list">
                   <li>
-                    <a href="#"
-                      ><img src="./images/korzina.svg" alt="корзина"
-                    /></a>
+                    <a href="#" class="header-link">сподобалось</a>
                   </li>
                   <li>
-                    <a href="#"><img src="./images/lupa.svg" alt="пошук" /></a>
+                    <a href="#" class="header-link">Особистий кабінет</a>
+                  </li>
+                  <li>
+                    <a href="#" class="header-link">налаштування</a>
+                  </li>
+                  <li>
+                    <a href="#" class="header-link"><img src="./images/korzina.svg" alt=""></a>
+                  </li>
+                  <li>
+                    <a href="#" class="header-link"><img src="./images/lupa.svg" alt=""></a>
                   </li>
                 </ul>
-              </div>
+              </nav>
             </div>
+          </div>
+
           </div>
         </div>
       </div>
@@ -442,5 +451,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
