@@ -63,7 +63,7 @@ ul {
 /* Header */
 /* header top */
 .header-contacts {
-  padding: 13px 19px;
+  /* padding: 13px 19px; */
   background-color: var(--secondary-background-color-black);
 }
 
@@ -73,6 +73,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   z-index: 3;
+  margin: 13px 19px;
 }
 
 .contact,
@@ -158,6 +159,16 @@ header::before {
   display: none;
 }
 
+.wrapper {
+  display: none;
+  /* position: absolute; */
+  z-index: 1;
+}
+
+header:hover .wrapper {
+  display: block;
+}
+
 /* .header-nav {
     background-color: var(--main-background-color-darkgrey);
   }
@@ -219,7 +230,7 @@ header::before {
   width: 100%;
   height: 810px;
   background: url(../images/hero.jpg) no-repeat center;
-  margin-top: 124px;
+  /* margin-top: 124px; */
 }
 
 .hero-logo {
@@ -891,6 +902,10 @@ footer h3 {
 @media (max-width: 767px) {
   body.lock {
     overflow: hidden;
+  }
+
+  .wrapper {
+    display: block;
   }
 
   .header-burger {
